@@ -39,6 +39,8 @@ class Card extends Component {
           (<div className="card">
             <h3>{this.props.title}</h3>
             <h4>Door is open!</h4>
+            <p>{this.props.img}</p>
+            <img src={`../../images/${this.props.img}.jpg`} alt={this.props.title}/>
             <button onClick={this.closeDoor}>Close</button>
           </div>)}
       </div>

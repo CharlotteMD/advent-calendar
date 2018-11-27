@@ -17,23 +17,23 @@ class App extends Component {
       {
         text: 'First day of Advent',
         present: 'Santa',
-        id: 'santa'
+        img: 'santa'
       },{
         text: 'Second day of Advent',
         present: 'Present',
-        id: 'present'
+        img: 'present'
       },{
         text: 'Third day of Advent',
         present: 'Lights',
-        id: 'lights'
+        img: 'lights'
       },{
         text: 'Fourth day of Advent',
         present: 'Cracker',
-        id: 'cracker'
+        img: 'cracker'
       },{
         text: 'Fifth day of Advent',
         present: 'Misletoe',
-        id: 'misletoe'
+        img: 'misletoe'
       }
       // },{
       //   text: 'Sixth day of Advent',
@@ -66,6 +66,7 @@ class App extends Component {
 
               <Card
                 title={day.text}
+                img={day.img}
               />
 
             // <div>
