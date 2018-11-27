@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 
+import Card from './components/card.js'
+
 class App extends Component {
 
   revealPresent = () => {
@@ -61,12 +63,20 @@ class App extends Component {
 
         <div className="calendar">
           {advent.map((day, i) =>
-            <div>
-              <p key={i} className="door" id={day.id}>{day.text}<span> {day.present}</span></p>
-              <button key={`button-${i}`} onClick={this.revealPresent}>Open</button>
-            </div>
+
+              <Card
+                title={day.text}
+              />
+
+            // <div>
+            //   <p key={i} className="door" id={day.id}>{day.text}<span> {day.present}</span></p>
+            //   <button key={`button-${i}`} onClick={this.revealPresent}>Open</button>
+            // </div>
         )}
         </div>
+
+
+
       </div>
     );
   }
