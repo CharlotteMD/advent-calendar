@@ -1,6 +1,21 @@
 * {
-  max-width: 1000px;
+  font-family: 'Montserrat', sans-serif;
   margin: 0 auto;
+  text-align: center;
+}
+
+.App {
+  /* background-image: url('./images/lights.jpeg'); */
+  background-image: url('https://images.unsplash.com/photo-1513885686838-c4000d2d1cf5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d6b763a7529b15b0503dbbbc2936ed1c&auto=format&fit=crop&w=1650&q=80');
+  background-size: contain;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 100px;
+  color: white;
+  padding: 20px;
+  font-family: 'Codystar', cursive;
 }
 
 .calendar {
@@ -9,36 +24,57 @@
   justify-content: center;
 }
 
-.calendar p {
-  border: solid 1px pink;
-  height: 100px;
-  width: 100px;
-  margin: 10px;
-  padding: 10px;
-}
-
 .card {
-  max-height: 200px;
-  max-width: 200px;
   margin: 10px;
   padding: 20px;
+  /* background-color: white; */
+  /* background-image: url('./images/lights.jpeg'); */
 }
 
 .closed, .open {
-  height: 200px;
-  width: 200px;
-  border: solid 1px grey;
+  height: 300px;
+  width: 300px;
+  /* border: solid 1px grey; */
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+
+}
+
+.closed button {
+  font-size: 100px;
+  font-weight: bold;
+  font-family: 'Codystar', cursive;
+  background: none;
+  border: none;
+  color: white;
+}
+
+.open {
+  background-color: white;
+}
+
+.open button {
+  border: none;
+  background: none;
 }
 
 .open img {
-  height: 100px;
-  width: auto;
-  display: block;
-  margin: 5px;
+  width: 150px;
+  border-radius: 25%;
+}
 
+.open h4 {
+  font-family: 'Codystar', cursive;
+  padding: 10px;
+  font-size: 14px;
+}
+
+footer h3 {
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+  font-family: 'Codystar', cursive;
 }

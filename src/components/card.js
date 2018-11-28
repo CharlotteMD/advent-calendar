@@ -14,31 +14,27 @@ class Card extends Component {
   openDoor = () => {
     this.setState({
       open: true
-    }, this.log );
+    });
   }
 
   closeDoor = () => {
     this.setState({
       open: false
-    }, this.log );
+    });
   }
 
-  log = () => {console.log(this.state.open)};
 
   render() {
     return(
       <div className="card">
         {!this.state.open &&
           (<div className="closed">
-            <h3>{this.props.day}</h3>
-            <button onClick={this.openDoor}>Open</button>
+            <button onClick={this.openDoor}>{this.props.day}</button>
           </div>)}
         {this.state.open &&
           (<div className="open">
-            <h3>{this.props.day}</h3>
             <h4>{this.props.caption}</h4>
-            <img src={this.props.img} alt={this.props.title}/>
-            <button onClick={this.closeDoor}>Close</button>
+            <button onClick={this.closeDoor}><img src={this.props.img} alt={this.props.caption}/></button>
           </div>)}
       </div>
     )
