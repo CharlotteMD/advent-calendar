@@ -7,14 +7,31 @@ class Card extends Component {
     super(props)
 
     this.state = {
-      open: false
+      open: false,
+      canOpen: false
+    }
+  }
+
+  checkDate = () => {
+    const now = new Date();
+    const dateToday = now.getDate();
+    console.log(dateToday);
+    if (this.props.day < dateToday) {
+      this.setState({
+        canOpen: true
+      });
     }
   }
 
   openDoor = () => {
-    this.setState({
-      open: true
-    });
+    const now = new Date();
+    const dateToday = now.getDate();
+    if (this.props.day < dateToday) {
+      this.setState({
+        canOpen: true,
+        open: true
+      });
+    }
   }
 
   closeDoor = () => {
@@ -24,14 +41,15 @@ class Card extends Component {
   }
 
 
+
   render() {
     return(
       <div className="card">
-        {!this.state.open &&
+        {!this.state.canOpen &&
           (<div className="closed">
             <button onClick={this.openDoor}>{this.props.day}</button>
           </div>)}
-        {this.state.open &&
+          {this.state.canOpen &&
           (<div className="open">
             <h4>{this.props.caption}</h4>
             <button onClick={this.closeDoor}><img src={this.props.img} alt={this.props.caption}/></button>
