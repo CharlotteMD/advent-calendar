@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-// import './App.css';
-
+import '../App.css';
 
 class Card extends Component {
   constructor(props) {
@@ -28,19 +27,17 @@ class Card extends Component {
 
   render() {
     return(
-      <div>
+      <div className="card">
         {!this.state.open &&
-          (<div className="card">
-            <h3>{this.props.title}</h3>
-            <h4>SubTitle</h4>
+          (<div className="closed">
+            <h3>{this.props.day}</h3>
             <button onClick={this.openDoor}>Open</button>
           </div>)}
         {this.state.open &&
-          (<div className="card">
-            <h3>{this.props.title}</h3>
-            <h4>Door is open!</h4>
-            <p>{this.props.img}</p>
-            <img src={`../../images/${this.props.img}.jpg`} alt={this.props.title}/>
+          (<div className="open">
+            <h3>{this.props.day}</h3>
+            <h4>{this.props.caption}</h4>
+            <img src={this.props.img} alt={this.props.title}/>
             <button onClick={this.closeDoor}>Close</button>
           </div>)}
       </div>
