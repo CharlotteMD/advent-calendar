@@ -59,6 +59,7 @@ class Card extends Component {
           </div>)}
           {this.state.canOpen &&
           (<div className="open">
+            <h5>{this.props.day}</h5>
             <h4>{this.props.caption}</h4>
             <button onClick={this.closeDoor}><img src={this.props.img} alt={this.props.caption}/></button>
           </div>)}

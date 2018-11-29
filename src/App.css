@@ -9,6 +9,7 @@
   background-image: url('https://images.unsplash.com/photo-1513885686838-c4000d2d1cf5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d6b763a7529b15b0503dbbbc2936ed1c&auto=format&fit=crop&w=1650&q=80');
   background-size: contain;
   padding-top: 50px;
+  width: 100%;
 }
 
 h1 {
@@ -90,8 +91,8 @@ button:focus {outline:0;}
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   z-index: 5;
-  position: absolute;
-  top: 35%;
+  position: fixed;
+  top: 25%;
   left: 22%;
   padding: 20px;
   color: white;

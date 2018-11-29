@@ -15,7 +15,7 @@ class App extends Component {
 
     const advent = [
       {
-        day: 35,
+        day: 19,
         pic: '',
         caption: 'Admire your Christmas decorations',
         img: 'https://i.pinimg.com/564x/24/2e/ae/242eae83587d953b727b9defb49f5d88.jpg'
