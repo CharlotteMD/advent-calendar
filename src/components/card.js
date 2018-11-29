@@ -30,16 +30,24 @@ class Card extends Component {
       this.setState({
         canOpen: true,
         open: true
-      });
+      })} else {
+      const alert = document.getElementById('alert');
+      alert.style = "display: block;"
     }
   }
 
+
   closeDoor = () => {
     this.setState({
-      open: false
+      open: false,
+      canOpen: false
     });
   }
 
+  closeAlert = () => {
+    const alert = document.getElementById('alert');
+    alert.style = "display: none;"
+  }
 
 
   render() {
@@ -54,6 +62,12 @@ class Card extends Component {
             <h4>{this.props.caption}</h4>
             <button onClick={this.closeDoor}><img src={this.props.img} alt={this.props.caption}/></button>
           </div>)}
+
+          <div id="alert">
+            <p>Stop trying to open your presents early!</p>
+          <img src="http://www.simplygod101.com/wp-content/uploads/2015/12/12-25devo-550x330.jpg" alt="Too early!"/>
+            <button onClick={this.closeAlert}>x</button>
+          </div>
       </div>
     )
   }

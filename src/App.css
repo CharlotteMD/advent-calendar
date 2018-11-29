@@ -72,9 +72,42 @@ h1 {
   font-size: 14px;
 }
 
-footer h3 {
+h3 {
   font-size: 30px;
   color: white;
   padding: 20px;
   font-family: 'Codystar', cursive;
+}
+
+button:focus {outline:0;}
+
+#alert {
+  display: none;
+  background-color: black;
+  border: green 10px dotted;
+  width: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 5;
+  position: absolute;
+  top: 35%;
+  left: 22%;
+  padding: 20px;
+  color: white;
+}
+
+#alert button {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 25px;
+  display: block;
+  font-weight: bold;
+}
+
+#alert img {
+  width: 75%;
+  margin: 20px;
+  border-radius: 25%;
 }

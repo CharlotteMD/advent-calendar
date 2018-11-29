@@ -15,7 +15,7 @@ class App extends Component {
 
     const advent = [
       {
-        day: 19,
+        day: 35,
         pic: '',
         caption: 'Admire your Christmas decorations',
         img: 'https://i.pinimg.com/564x/24/2e/ae/242eae83587d953b727b9defb49f5d88.jpg'
@@ -143,7 +143,8 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Merry Christmas 2018</h1>
+          <h1>Merry Christmas</h1>
+          <h3>Love from Charlotte xxx</h3>
         </header>
 
         <div className="calendar">
@@ -160,7 +161,7 @@ class App extends Component {
         </div>
 
         <footer>
-          <h3>Love from Charlotte xxx</h3>
+          <h3>Coded by Charlotte 👩🏻‍💻</h3>
         </footer>
 
       </div>
