@@ -12,21 +12,11 @@ class Card extends Component {
     }
   }
 
-  checkDate = () => {
-    const now = new Date();
-    const dateToday = now.getDate();
-    console.log(dateToday);
-    if (this.props.day < dateToday) {
-      this.setState({
-        canOpen: true
-      });
-    }
-  }
 
   openDoor = () => {
     const now = new Date();
     const dateToday = now.getDate();
-    if (this.props.day < dateToday) {
+    if (dateToday >= this.props.day) {
       this.setState({
         canOpen: true,
         open: true
