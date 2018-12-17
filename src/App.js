@@ -91,7 +91,7 @@ class App extends Component {
 
     var generatedNumber = (Math.ceil(Math.random()*(images.length))-1);
     const app = document.getElementById('app');
-    app.style.background = `url(${images[generatedNumber]}) no-repeat center center fixed`;
+    app.style.backgroundImage = `url(${images[generatedNumber]})`;
 
   }
 

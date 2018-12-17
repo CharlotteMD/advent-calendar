@@ -7,8 +7,7 @@
 }
 
 .App {
-  /* background-image: url('./images/lights.jpeg'); */
-  /* background-image: url('https://images.unsplash.com/photo-1513639725746-c5d3e861f32a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80'); */
+
   background: url('https://images.unsplash.com/photo-1513639725746-c5d3e861f32a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
   padding-top: 50px;
   width: 100%;
@@ -149,4 +148,8 @@ button:focus {outline:0;}
   width: 75%;
   margin: 20px;
   border-radius: 25%;
+}
+
+.App {
+  background-size: cover;
 }
