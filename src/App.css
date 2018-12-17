@@ -35,33 +35,31 @@ h1 {
 }
 
 .card {
-  margin: 10px;
-  padding: 10px;
+  margin: 20px;
 }
 
 .closed {
-  height: 150px;
-  width: 150px;
-  padding: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
+  /* padding: 10px; */
   background-color: rgba(176,224,230,.3);
   border-radius: 50%;
   text-align: center;
-  vertical-align: middle;
-  display: table-cell;
-  line-height: 50px;
+  color: white;
 }
 
 .closed button {
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  all: unset; /* TODO: for ios, see if we can find the expect properties */
+  height: 150px;
+  width: 150px;
+  display: block;
   font-size: 100px;
   font-weight: bold;
   font-family: 'Codystar', cursive;
-  background: none;
   border: none;
-  color: white;
+  color: inherit;
 }
 
 .open {
