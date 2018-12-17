@@ -8,6 +8,7 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.changeHColor = this.changeHColor.bind(this);
+    this.changeBackground = this.changeBackground.bind(this);
 
     this.state = {
       color: '',
@@ -34,14 +35,27 @@ class App extends Component {
         color += letters[Math.floor(Math.random() * 12)];
     }
     const head = document.getElementById('head');
-    console.log(color);
     head.style.color = color;
   };
 
+  changeBackground = () => {
+    var images = [
+      'https://images.unsplash.com/photo-1513639725746-c5d3e861f32a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+      'https://images.unsplash.com/photo-1513885535751-8b9238bd345a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+      'https://images.unsplash.com/photo-1482097623218-813ddc8d7046?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2689&q=80'
+    ];
+
+    var generatedNumber = (Math.ceil(Math.random()*(images.length))-1);
+    const app = document.getElementById('app');
+    app.style.background = `url(${images[generatedNumber]}) no-repeat center center fixed`;
+
+  }
+
 
   componentDidMount() {
-    window.addEventListener('click', this.changeHColor);
-  }
+    // window.addEventListener('click', this.changeHColor);
+    window.addEventListener('click', this.changeBackground);
+  };
 
 
   render() {
@@ -148,7 +162,7 @@ class App extends Component {
 
 
     return (
-      <div className="App">
+      <div id="app" className="App">
         <header className="App-header">
           <h1 id="head">{this.sleeps()} More Sleeps!</h1>
         </header>

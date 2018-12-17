@@ -40,17 +40,6 @@ class Card extends Component {
     alert.style = "display: none;"
   }
 
-  changeHColor = () => {
-    var letters = '456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 12)];
-    }
-    this.setState ({color: color});
-    console.log(this.state.color);
-    const head = document.getElementById('head');
-    head.style.color = {color};
-  };
 
 
   render() {
