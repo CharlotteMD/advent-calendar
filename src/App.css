@@ -42,7 +42,7 @@ h1 {
   /* background-image: url('./images/lights.jpeg'); */
 }
 
-.closed, .open {
+.closed {
   height: 300px;
   width: 300px;
   /* border: solid 1px grey; */
@@ -51,7 +51,6 @@ h1 {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .closed button {
@@ -65,6 +64,15 @@ h1 {
 
 .open {
   background-color: white;
+  z-index: 5;
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: dotted grey 10px;
 }
 
 .open button {
@@ -73,14 +81,33 @@ h1 {
 }
 
 .open img {
-  width: 150px;
+  position: absolute;
+  max-width: 60%;
+  max-height: 60%;
   border-radius: 25%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -30%);
 }
 
 .open h4 {
   font-family: 'Codystar', cursive;
   padding: 10px;
-  font-size: 14px;
+  font-size: 35px;
+}
+
+.open h5 {
+  font-size: 30px;
+}
+
+#x {
+  position: absolute;
+  bottom: 5px;
+  font-size: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+  font-weight: bolder;
 }
 
 h3 {
