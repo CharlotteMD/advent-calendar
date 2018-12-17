@@ -15,7 +15,7 @@
 }
 
 h1 {
-  font-size: 150px;
+  font-size: 120px;
   padding: 20px;
   width: 100%;
   font-family: 'Codystar', cursive;
@@ -36,14 +36,14 @@ h1 {
 
 .card {
   margin: 10px;
-  padding: 20px;
+  padding: 10px;
   /* background-color: white; */
   /* background-image: url('./images/lights.jpeg'); */
 }
 
 .closed {
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   /* border: solid 1px grey; */
   padding: 10px;
   display: flex;
