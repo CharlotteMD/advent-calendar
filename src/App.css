@@ -14,7 +14,7 @@
 }
 
 h1 {
-  font-size: 120px;
+  font-size: 100px;
   padding: 20px;
   width: 100%;
   font-family: 'Codystar', cursive;
@@ -22,7 +22,8 @@ h1 {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  color: yellow;
+  color: #FFDF00;
+  background-color: rgba(176,224,230,.3);
 }
 
 .calendar {
@@ -36,19 +37,18 @@ h1 {
 .card {
   margin: 10px;
   padding: 10px;
-  /* background-color: white; */
-  /* background-image: url('./images/lights.jpeg'); */
 }
 
 .closed {
   height: 200px;
   width: 200px;
-  /* border: solid 1px grey; */
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  background-color: rgba(176,224,230,.3);
+  border-radius: 50%;
 }
 
 .closed button {
@@ -92,6 +92,7 @@ h1 {
   font-family: 'Codystar', cursive;
   padding: 10px;
   font-size: 35px;
+  z-index: 5;
 }
 
 .open h5 {
@@ -152,4 +153,15 @@ button:focus {outline:0;}
 
 .App {
   background-size: cover;
+}
+
+.calendar::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 20px;
+}
+
+.calendar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(255,223,0,.5);
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
 }
