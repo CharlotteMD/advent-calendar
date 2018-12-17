@@ -11,6 +11,13 @@ class App extends Component {
       this.toggle = true;
   };
 
+  sleeps = () => {
+    const now = new Date();
+    const dateToday = now.getDate();
+    // const sleeps = 25 - dateToday;
+    return 25 - dateToday;
+  }
+
   render() {
 
     const advent = [
@@ -143,8 +150,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Merry Christmas</h1>
-          <h3>Love from Charlotte xxx</h3>
+          <h1>{this.sleeps()} More Sleeps!</h1>
         </header>
 
         <div className="calendar">
