@@ -40,8 +40,8 @@ h1 {
 }
 
 .closed {
-  height: 200px;
-  width: 200px;
+  height: 120px;
+  width: 120px;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -52,6 +52,7 @@ h1 {
   text-align: center;
   vertical-align: middle;
   display: table-cell;
+  line-height: 50px;
 }
 
 .closed button {
@@ -93,8 +94,8 @@ h1 {
 
 .open h4 {
   font-family: 'Codystar', cursive;
-  padding: 10px;
-  font-size: 30px;
+  padding: 5px;
+  font-size: 25px;
   z-index: 5;
 }
 
